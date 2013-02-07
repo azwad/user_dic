@@ -1,7 +1,7 @@
 #!/bin/sh
 
 DICDIR='/usr/local/lib/mecab/dic/naist-jdic'
-WORKDIR=`pwd`
+WORKDIR='/usr/local/lib/mecab/user_dic'
 rm -f ${WORKDIR}/download_dic/*
 rm -f ${WORKDIR}/utf8_dic/*
 rm -f ${WORKDIR}/euc-jp_dic/*
@@ -53,7 +53,7 @@ chdir '/usr/local/etc/'
 #cp -f mecabrc mecabrc.ipa
 cp -f mecabrc mecabrc.org
 if [ -e mecabrc.naist ]; then
-	rm mecabrc.naist↲
+	rm mecabrc.naist
 fi
 
 echo 'dicdir = /usr/local/lib/mecab/dic/naist-jdic' >> mecabrc.naist
